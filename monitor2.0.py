@@ -7,7 +7,7 @@ from plyer import notification
 
 ####################
 REGULAR_DELAY = 300       # 5 minutes
-TIMEOUT_DELAY = 600     # 10 minutes
+TIMEOUT_DELAY = 600       # 10 minutes
 ####################
 
 
@@ -66,15 +66,7 @@ if __name__ == "__main__":
     
         num = str(ctr)
         
-        if num[-1] == "1" and num[-2:] != "11":
-            print(f"Checking for the {ctr}st time:")
-        elif num[-1] == "2" and num[-2:] != "12":
-            print(f"Checking for the {ctr}nd time:")
-        elif num[-1] == "3" and num[-2:] != "13":
-            print(f"Checking for the {ctr}rd time:")
-        else:
-            print(f"Checking for the {ctr}th time:")
-
+        print(f"Checking... ({ctr}):")
 
         dates = get_article_dates()
 
